@@ -1,3 +1,5 @@
+version: '3'
+
 services:
   banking-validation:
     image: joao0212/banking-validation:v2
@@ -8,7 +10,7 @@ services:
       - QUARKUS_DATASOURCE_HOST=postgres-db-alura
       - QUARKUS_DATASOURCE_PORT=5432
     ports:
-      - 8181:8181
+      - "8181:8181"
     depends_on:
       - postgres-db-alura
 
@@ -20,9 +22,19 @@ services:
       - POSTGRES_PASSWORD=joao
       - POSTGRES_DB=agencia
     ports:
-      - 5432:5432
+      - "5432:5432"
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
 
 volumes:
   postgres_data:
