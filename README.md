@@ -80,8 +80,20 @@ docker ps
 - Simulação de cenário real de produção
 
 
+
+
  # Observações
  
 - Pode ser executado localmente ou via Codespaces
 - Toda infraestrutura sobe automaticamente via Docker Compose
 - Serviços são totalmente desacoplados
+
+
+## Autor
+
+João Miquelino
+Backend Developer | Java • Spring Boot • Microsservices
+
+LinkedIn: https://www.linkedin.com/in/joão-miquelino-95ba34202
+
+GitHub: https://github.com/miqueelino
