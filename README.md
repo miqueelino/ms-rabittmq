@@ -1,4 +1,4 @@
-# 📦 ms-rabittmq
+#  ms-rabittmq
 
 ![Java](https://img.shields.io/badge/Java-17-blue)
 ![Docker](https://img.shields.io/badge/Docker-Enabled-blue)
@@ -71,16 +71,17 @@ docker ps
 ---
 
 
- Diferenciais técnicos
+ # Diferenciais técnicos
 
-Arquitetura baseada em eventos
-Comunicação assíncrona entre serviços
-Infraestrutura containerizada
-Ambiente reproduzível com Docker Compose
-Simulação de cenário real de produção
+- Arquitetura baseada em eventos
+- Comunicação assíncrona entre serviços
+- Infraestrutura containerizada
+- Ambiente reproduzível com Docker Compose
+- Simulação de cenário real de produção
 
- Observações
+
+ # Observações
  
-Pode ser executado localmente ou via Codespaces
-Toda infraestrutura sobe automaticamente via Docker Compose
-Serviços são totalmente desacoplados
+- Pode ser executado localmente ou via Codespaces
+- Toda infraestrutura sobe automaticamente via Docker Compose
+- Serviços são totalmente desacoplados
