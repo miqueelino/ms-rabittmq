@@ -46,3 +46,41 @@ Docker Compose é responsável por orquestrar toda a infraestrutura do sistema.
 ```bash
 git clone https://github.com/miqueelino/ms-rabittmq.git
 cd ms-rabittmq
+
+```
+
+---
+
+## 2. Subir toda infraestrutura
+
+```bash
+docker compose up -d
+
+```
+
+---
+
+## 4. Verificar containers
+
+
+```bash
+docker ps
+
+```
+
+---
+
+
+ Diferenciais técnicos
+
+Arquitetura baseada em eventos
+Comunicação assíncrona entre serviços
+Infraestrutura containerizada
+Ambiente reproduzível com Docker Compose
+Simulação de cenário real de produção
+
+ Observações
+ 
+Pode ser executado localmente ou via Codespaces
+Toda infraestrutura sobe automaticamente via Docker Compose
+Serviços são totalmente desacoplados
